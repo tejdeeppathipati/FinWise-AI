@@ -1,0 +1,196 @@
+/* Overview.css */
+:root {
+    --primary-blue: #2563eb;
+    --primary-text: #1f2937;
+    --secondary-text: #6b7280;
+    --success-color: #10b981;
+    --danger-color: #ef4444;
+    --border-radius: 12px;
+    --card-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --hover-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+  
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #f8fafc;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    gap: 2rem;
+  }
+  
+  /* Top Stats Row */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  
+  /* First Row (Market Movers and Budget) */
+  .main-grid {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Second Row (Portfolio and Retirement) */
+  .bottom-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .card {
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    padding: 1.5rem;
+    transition: all 0.2s ease;
+    width: 100%;
+  }
+  
+  .stat-card {
+    background: white;
+    padding: 1.25rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-text);
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Market Movers */
+  .market-movers-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .market-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e5e7eb;
+    color: var(--secondary-text);
+  }
+  
+  .market-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Budget Section */
+  .budget-progress {
+    margin: 1.5rem 0;
+  }
+  
+  .budget-amount {
+    color: var(--secondary-text);
+    margin-bottom: 1rem;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e5e7eb;
+    border-radius: 9999px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  
+  .progress-value {
+    height: 100%;
+    background-color: var(--primary-blue);
+    border-radius: 9999px;
+  }
+  
+  .budget-breakdown {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .breakdown-value {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-text);
+    margin-bottom: 0.5rem;
+  }
+  
+  .breakdown-label {
+    color: var(--secondary-text);
+  }
+  
+  /* Stats Card Styling */
+  .stat-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-card-title {
+    color: var(--secondary-text);
+  }
+  
+  .stat-card-value {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+  
+  .trend-indicator {
+    font-size: 0.875rem;
+  }
+  
+  .trend-up {
+    color: var(--success-color);
+  }
+  
+  .trend-down {
+    color: var(--danger-color);
+  }
+  
+  /* Bottom Cards */
+  .portfolio-value, .retirement-value {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 1.5rem 0;
+  }
+  
+  @media (max-width: 1200px) {
+    .main-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .bottom-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .dashboard-container {
+      padding: 1rem;
+    }
+    
+    .stats-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .budget-breakdown {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }

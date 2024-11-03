@@ -1,0 +1,116 @@
+/* FinancialInfoForm.css or FormStyles.css */
+
+.financial-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .financial-info-box {
+    background: #f4f7fb;  /* Light greyish-blue background, matching SignUp */
+    padding: 2.5rem;  /* Add consistent padding */
+    width: 500px;  /* Similar width as the Sign-Up form */
+    border-radius: 12px;  /* Soft rounded corners */
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);  /* Consistent shadow */
+    text-align: center;  /* Centered text */
+  }
+  
+  .financial-info-box h2 {
+    font-size: 1.8rem;  /* Consistent heading size */
+    font-weight: bold;
+    color: #222;  /* Dark grey color */
+    margin-bottom: 0.5rem;
+  }
+  
+  .financial-info-box p {
+    color: #666;  /* Light grey color for supporting text */
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .financial-info-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .input-group label {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.3rem;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="file"] {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="number"]:focus,
+  input[type="file"]:focus {
+    border-color: #2c2c54;
+    box-shadow: 0px 4px 12px rgba(44, 44, 84, 0.1);
+    outline: none;
+  }
+  
+  .financial-info-button {
+    background-color: #2c2c54;  /* Dark purple to match Sign-Up button */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.7rem;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .financial-info-button:hover {
+    background-color: #1f1f3c;  /* Slightly darker on hover */
+  }
+  
+  .form-message {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #d9534f;  /* Red for error or success messages */
+  }
+  
+  .redirect {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 1rem;
+  }
+  
+  .redirect a {
+    color: #3366cc;
+    text-decoration: none;
+  }
+  
+  .redirect a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    font-size: 0.7rem;
+    color: #aaa;
+    margin-top: 1rem;
+  }
+  

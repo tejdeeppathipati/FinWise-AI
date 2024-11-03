@@ -1,0 +1,11 @@
+/* MainStyles.css */
+
+.main-container {
+    padding-top: 70px; /* Add padding to avoid overlap with fixed navbar */
+  }
+  
+  .content-area {
+    padding: 2rem;
+    margin-top: 1rem;
+  }
+  

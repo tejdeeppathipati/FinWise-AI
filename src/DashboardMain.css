@@ -1,0 +1,43 @@
+.dashboard-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  padding: 2rem;
+  margin-left: 270px; /* Offset for sidebar */
+  width: calc(100% - 270px);
+}
+
+.card {
+  background: #ffffff;
+  padding: 1.5rem;
+  width: calc(33.333% - 1.5rem);
+  min-width: 250px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c2c54;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 1.5rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+}

@@ -1,0 +1,82 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f4f7fb;
+}
+
+.dashboard-content {
+  display: flex;
+  padding: 2rem;
+}
+
+.dashboard-body {
+  display: flex;
+  flex-grow: 1;
+  gap: 2rem;
+  margin-left: 300px; /* Adjust according to sidebar width */
+}
+
+/* Sidebar CSS */
+.sidebar {
+  background: #2d3748; /* Dark blue background */
+  color: #ffffff;
+  width: 300px;
+  padding: 2rem;
+  position: fixed;
+  height: 100%;
+}
+
+.sidebar h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar .section,
+.sidebar .sub-section {
+  margin-top: 1.5rem;
+}
+
+.section-title, .sub-title {
+  font-size: 1.2rem;
+}
+
+.section-amount.positive {
+  color: #2ed573; /* Green for positive values */
+}
+
+.section-amount.negative {
+  color: #e74c3c; /* Red for negative values */
+}
+
+/* Dashboard Main Content CSS */
+.dashboard-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  padding: 2rem;
+  width: 100%;
+}
+
+.card {
+  background: #ffffff;
+  padding: 2rem;
+  width: calc(33.333% - 1.5rem);
+  min-width: 250px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c2c54;
+}

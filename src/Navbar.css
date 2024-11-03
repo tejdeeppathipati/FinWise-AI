@@ -1,0 +1,53 @@
+/* Navbar.css */
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #2d3748; /* Dark blue background */
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000; /* Make sure it stays above other content */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-links li {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar-links li:hover {
+  color: #e2e8f0; /* Lighter color on hover */
+}
+
+.sign-out-button {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-out-button:hover {
+  background-color: #4a5568; /* Slightly darker on hover */
+}

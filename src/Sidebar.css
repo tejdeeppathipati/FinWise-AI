@@ -1,0 +1,39 @@
+.sidebar {
+  background: #2d3748; /* Dark blue background */
+  color: #ffffff;
+  width: 200px;
+  padding: 1.5rem;
+  position: fixed;
+  left: 0;
+  top: 70px; /* Adjusted to leave space for the Navbar */
+  height: calc(100% - 70px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar .section,
+.sidebar .sub-section {
+  margin-top: 1rem;
+}
+
+.section-title, .sub-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.section-amount.positive {
+  color: #2ed573; /* Green for positive values */
+}
+
+.section-amount.negative {
+  color: #e74c3c; /* Red for negative values */
+}
+
+.net-worth h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}

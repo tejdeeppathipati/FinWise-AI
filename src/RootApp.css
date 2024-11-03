@@ -1,0 +1,55 @@
+/* RootApp.css or MainApp.css */
+
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  .app-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px; /* Make room for the fixed navbar */
+  }
+  
+  .dashboard-container {
+    display: flex;
+    height: calc(100% - 70px); /* Full height minus the navbar */
+  }
+  
+  .sidebar {
+    width: 20%;
+    background-color: #2d3748;
+    color: white;
+    padding: 1.5rem;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  .main-content {
+    width: 80%;
+    padding: 2rem;
+    overflow-y: auto; /* Allow scrolling for the main content */
+  }
+  
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
