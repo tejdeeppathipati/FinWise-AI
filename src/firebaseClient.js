@@ -7,7 +7,7 @@ import { getFirestore } from "firebase/firestore";
 // Your web app's Firebase configuration
 // This contains the Firebase keys you already have configured.
 const firebaseConfig = {
-  apiKey: "AIzaSyAGlZy0Ca3JSpfuu5a0wJKnm75CF5OHpYw",
+  apiKey: "xxxx",
   authDomain: "hacknc-85ef3.firebaseapp.com",
   projectId: "hacknc-85ef3",
   storageBucket: "hacknc-85ef3.appspot.com",  // Fixed storageBucket URL: firebasestorage.app should be appspot.com
